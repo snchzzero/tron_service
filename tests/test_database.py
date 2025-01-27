@@ -2,13 +2,13 @@
 
 import datetime
 import pytest
-from const import TABLE_WALLET_WALLET_ADDRESS, TABLE_WALLET_BANDWIDTH, \
+from ..const import TABLE_WALLET_WALLET_ADDRESS, TABLE_WALLET_BANDWIDTH, \
     TABLE_WALLET_TRX_BALANCE, TABLE_WALLET_ENERGY, \
     TABLE_WALLET_TRX_TIMESTAMP, TABLE_WALLET_ID
 from .fixture import session, engine
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
-from models import WalletRequest
+from ..models import WalletRequest
 
 
 @pytest.mark.asyncio

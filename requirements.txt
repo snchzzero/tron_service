@@ -2,3 +2,5 @@ SQLAlchemy
 tronpy
 fastapi
 pydantic
+aiosqlite
+uvicorn

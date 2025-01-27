@@ -35,6 +35,7 @@ MANIFEST
 # User-specific stuff:
 .vscode/
 .idea/
+.idea
 requirements.freeze.txt
 requirements-pylint.txt
 .pylintrc

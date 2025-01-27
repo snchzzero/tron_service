@@ -5,7 +5,7 @@ import pytest_asyncio
 from unittest.mock import MagicMock
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 from tronpy import Tron
-from models import Base
+from ..models import Base
 
 
 DATABASE_URL = "sqlite+aiosqlite:///./test.db"

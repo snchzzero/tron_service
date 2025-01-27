@@ -2,10 +2,10 @@
 
 import pytest
 from fastapi.testclient import TestClient
-from const import TABLE_WALLET_BANDWIDTH, TABLE_WALLET_ENERGY, \
+from ..const import TABLE_WALLET_BANDWIDTH, TABLE_WALLET_ENERGY, \
     TABLE_WALLET_TRX_BALANCE, GET_LIST_DATA_WALLET_LIMIT, TABLE_WALLET_ID, \
     TABLE_WALLET_WALLET_ADDRESS
-from main import app
+from ..main import app
 from .const_test import RESULT_ACCOUNT_INFO_LIST, TEST_COUNT_ACCOUNT_INFO, \
     FREE_NET_USAGE_LIST, BALANCE_LIST, \
     FROZEN_BALANCE_FOR_ENERGY
