@@ -38,4 +38,4 @@ MANIFEST
 requirements.freeze.txt
 requirements-pylint.txt
 .pylintrc
-tests/test.db
+tests/

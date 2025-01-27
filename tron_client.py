@@ -9,7 +9,13 @@ from const import TABLE_WALLET_BANDWIDTH, TABLE_WALLET_ENERGY, \
 client = Tron()
 
 async def get_tron_data(address: str) -> dict:
-    """Get data from tron client by url """
+    """
+    Get data from tron client by url
+    Args:
+        the wallet address to fetch data for
+    Returns:
+        wallet data as dict
+    """
 
     resp_account_info = client.get_account(address)
 

@@ -12,18 +12,13 @@ from tron_client import get_tron_data
 app = FastAPI()
 
 
-class RequestWallet(BaseModel): address: str
+class RequestWallet(BaseModel):
+    address: str
 
-# def get_db():
-#     db = async_session_local
-#     try:
-#         yield db
-#     finally:
-#         db.close()
-#
-# @app.on_event("startup")
-# async def on_startup():
-#     await init_db()
+
+@app.on_event("startup")
+async def on_startup():
+    await init_db()
 
 
 @app.post("/wallet/")
